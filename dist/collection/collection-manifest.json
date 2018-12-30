@@ -1,0 +1,110 @@
+{
+  "components": [
+    {
+      "tag": "agc-adjusted-yearling-weight",
+      "dependencies": [],
+      "componentClass": "AgcAdjustedYearlingWeight",
+      "componentPath": "components/agc-adjusted-yearling-weight/agc-adjusted-yearling-weight.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-adjusted-yearling-weight-progress",
+      "dependencies": [],
+      "componentClass": "AgcAdjustedYearlingWeightProgress",
+      "componentPath": "components/agc-adjusted-yearling-weight-progress/agc-adjusted-yearling-weight-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-adjusted-yearling-weight-results",
+      "dependencies": [],
+      "componentClass": "AgcAdjustedYearlingWeightResults",
+      "componentPath": "components/agc-adjusted-yearling-weight-results/agc-adjusted-yearling-weight-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-adjusted-yearling-weight-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcAdjustedYearlingWeightResultsPlaceholder",
+      "componentPath": "components/agc-adjusted-yearling-weight-results-placeholder/agc-adjusted-yearling-weight-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}

@@ -1,0 +1,1 @@
+// AgcAdjustedYearlingWeight: CommonJS Main
